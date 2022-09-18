@@ -1,6 +1,7 @@
 # main.py
 from fastapi import FastAPI
 from fastapi.responses import PlainTextResponse
+import requests
 
 app = FastAPI()
 
