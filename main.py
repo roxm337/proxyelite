@@ -4,7 +4,9 @@ from fastapi.responses import PlainTextResponse
 
 app = FastAPI()
 
+machine_ip = requests.get('http://ipecho.net/plain?').text
+
 @app.get("/",response_class=PlainTextResponse)
 def hello():
-    return 'hello world'
+    return f'ip: {machine_ip}'
 
