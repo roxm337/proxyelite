@@ -13,7 +13,7 @@ app = FastAPI()
 
 @app.get("/", response_class=PlainTextResponse)
 async def main():
-    url = "https://ziaprojet.000webhostapp.com/http.txt"
+    url = "https://ziaprojet.000webhostapp.com/socks4.txt"
     html = urlopen(url).read()
     soup = BeautifulSoup(html, features="html.parser")
 
